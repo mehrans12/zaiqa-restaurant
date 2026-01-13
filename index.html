@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaiqa - Modern Fast Food & Desi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header_section">
+    <nav class="navbar container">
+        <a class="navbar-brand" href="#" onclick="showSection('home')">Zaiqa</a>
+        
+        <ul class="nav-links">
+            <li><a href="#" onclick="showSection('home')">HOME</a></li>
+            <li><a href="#" onclick="showSection('menu')">MENU</a></li>
+            <li><a href="#" onclick="showSection('admin')">ADMIN</a></li>
+        </ul>
+
+        <div class="user_option">
+            <a class="cart_link" href="javascript:void(0)" onclick="toggleCart()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <section id="home" class="content-section">
+    <div class="hero_area">
+        <div class="container">
+            <div class="hero_text">
+                <h1>Fast Food <br> Restaurant</h1>
+                <p>Experience the authentic taste of tradition and spice. From our charcoal grills to your table, we bring you the finest culinary heritage.</p>
+                <button class="btn-yellow" onclick="showSection('menu')">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="about_section container">
+        <div class="about_img">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="About Zaiqa">
+        </div>
+        <div class="about_detail">
+            <h2 class="heading_font">The Story of Zaiqa</h2>
+            <p>Founded in 1998, Zaiqa has been at the forefront of bringing authentic flavors to your plate. We believe in the magic of hand-ground spices, slow-cooked meats, and the warmth of hospitality that makes every guest feel at home.</p>
+            <button class="btn-yellow">Learn More</button>
+        </div>
+    </section>
+
+    <section class="promo_section">
+        <div class="container promo_grid">
+            <div class="promo_card">
+                <div class="promo_text">
+                    <h3 class="heading_font">Tasty Thursdays</h3>
+                    <h2>20% Off</h2>
+                    <button class="btn-yellow">Order Now</button>
+                </div>
+            </div>
+            <div class="promo_card promo_v2">
+                <div class="promo_text">
+                    <h3 class="heading_font">Pizza Days</h3>
+                    <h2>15% Off</h2>
+                    <button class="btn-yellow">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured_section container">
+        <h2 class="section_title heading_font">Popular Dishes</h2>
+        <div class="menu_grid">
+            <div class="menu_item">
+                <h3 class="heading_font">Mutton Kunna</h3>
+                <p>Traditional slow-cooked mutton in a clay pot.</p>
+                <div class="price_row"><span>Rs. 1850</span><button class="add_to_cart_btn">🛒</button></div>
+            </div>
+            <div class="menu_item">
+                <h3 class="heading_font">Zinger Burger</h3>
+                <p>Crispy chicken fillet with secret Zaiqa sauce.</p>
+                <div class="price_row"><span>Rs. 550</span><button class="add_to_cart_btn">🛒</button></div>
+            </div>
+            <div class="menu_item">
+                <h3 class="heading_font">Seekh Kabab</h3>
+                <p>Flame-grilled beef skewers with green chutney.</p>
+                <div class="price_row"><span>Rs. 850</span><button class="add_to_cart_btn">🛒</button></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="highlights_section">
+        <div class="container">
+            <h2 class="section_title heading_font" style="color:white">Why Choose Us</h2>
+            <div class="highlights_grid">
+                <div class="highlight_box">
+                    <div class="icon">🏆</div>
+                    <h4>Premium Quality</h4>
+                    <p>We use only the finest, fresh ingredients and organic spices.</p>
+                </div>
+                <div class="highlight_box">
+                    <div class="icon">🚚</div>
+                    <h4>Fast Delivery</h4>
+                    <p>Hot and fresh food delivered to your doorstep in 30 minutes.</p>
+                </div>
+                <div class="highlight_box">
+                    <div class="icon">👨‍🍳</div>
+                    <h4>Expert Chefs</h4>
+                    <p>Our chefs are masters of traditional Pakistani and Fast Food cuisine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery_section container">
+        <h2 class="section_title heading_font">Our Gallery</h2>
+        <div class="gallery_grid">
+            <div class="gallery_item"><img src="zaiqa 5.jpg" alt="Gallery 1"></div>
+            <div class="gallery_item"><img src="zaiqa 4.jpg" alt="Gallery 2"></div>
+            <div class="gallery_item"><img src="zaiqa 1.jpg" alt="Gallery 3"></div>
+            <div class="gallery_item"><img src="zaiqa 2.jpg" alt="Gallery 4"></div>
+            <div class="gallery_item"><img src="zaiqa 3.jpg" alt="Gallery 5"></div>
+            <div class="gallery_item"><img src="zaiqa 7.jpg"alt="Gallery 6"></div>
+        </div>
+    </section>
+
+    <section class="reviews_section">
+        <div class="container">
+            <h2 class="section_title heading_font">What Our Customers Say</h2>
+            <div class="reviews_grid">
+                <div class="review_card">
+                    <p>"The best Biryani I've had in years. The aroma and the spice level were perfect!"</p>
+                    <h5>- Ahmed Khan</h5>
+                </div>
+                <div class="review_card">
+                    <p>"Super fast delivery and the burgers were still crispy when they arrived."</p>
+                    <h5>- Sarah J.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact_section container" id="contact">
+        <div class="grid-2">
+            <div class="contact_info">
+                <h2 class="heading_font">Get In Touch</h2>
+                <p>Have a question or want to book a table for a large group? Reach out to us.</p>
+                <div class="info_item">📍 45 Gourmet Avenue, Karachi, PK</div>
+                <div class="info_item">📞 +92 300 1234567</div>
+                <div class="info_item">✉️ hello@zaiqa.com</div>
+            </div>
+            <form class="contact_form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email Address">
+                <textarea placeholder="Message" rows="5"></textarea>
+                <button class="btn-yellow">Send Message</button>
+            </form>
+        </div>
+    </section>
+</section>
+
+        </section>
+<section id="menu" class="content-section" style="display:none;">
+    <div class="menu_hero">
+        <div class="container">
+            <div class="hero_text">
+                <h1 class="heading_font">Our Signature Menu</h1>
+                <p>From traditional spices to modern favorites, explore our curated selection of flavors.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="filters_menu">
+            <li class="active" onclick="filterMenu('all', this)">All</li>
+            <li onclick="filterMenu('desi', this)">Desi</li>
+            <li onclick="filterMenu('fastfood', this)">Fast Food</li>
+            <li onclick="filterMenu('bbq', this)">BBQ</li>
+        </ul>
+        <div id="menu-grid" class="menu_grid"></div>
+    </div>
+</section>
+        <section id="admin" class="content-section" style="display:none;">
+            <div class="container admin_container">
+                <div id="login-gate" class="form_container">
+                    <h2 class="heading_font">Admin Login</h2>
+                    <input type="email" id="adminEmail" placeholder="Email">
+                    <input type="password" id="adminPass" placeholder="Password">
+                    <button class="btn-yellow" onclick="handleLogin()">Login</button>
+                </div>
+
+               <div id="admin-panel" style="display:none;">
+ <div class="admin_dash_header">
+    <h2 class="heading_font">Executive Dashboard</h2>
+    <div class="admin_header_actions">
+        <button class="btn-reset" onclick="resetRevenue()">Reset All History</button>
+        <button class="btn-yellow" onclick="handleLogout()">Logout</button>
+    </div>
+</div>
+    
+    <div class="stats_bar">
+        <div class="stat_box">
+            <span>Total Revenue</span>
+            <h3 id="stat-revenue">0</h3>
+        </div>
+        <div class="stat_box">
+            <span>Total Orders</span>
+            <h3 id="stat-orders">0</h3>
+        </div>
+    </div>
+
+    <div class="admin_content_grid">
+        <div class="admin_card">
+            <h3 class="heading_font">Menu Catalog</h3>
+            <p class="admin_subtext">Add, update, or remove dishes from the live menu.</p>
+            
+            <div class="admin_form">
+    <input type="text" id="itemName" placeholder="Item Name">
+    <input type="text" id="itemImg" placeholder="Image Path (e.g., images/pizza.jpg)">
+    <div class="input_row">
+        <input type="number" id="itemPrice" placeholder="Price">
+        <select id="itemCategory">
+            <option value="desi">Desi</option>
+            <option value="fastfood">Fast Food</option>
+            <option value="bbq">BBQ</option>
+        </select>
+    </div>
+    <button class="btn-yellow full-width" onclick="addItem()">+ Add New Dish</button>
+</div>
+
+            <div id="admin-list" class="admin_item_list"></div>
+        </div>
+
+        <div class="admin_card">
+            <h3 class="heading_font">Live Order Queue</h3>
+            <div id="admin-orders" class="admin_scroll_list"></div>
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+    </main>
+<section id="order-success" class="content-section" style="display:none;">
+    <div class="container success_container">
+        <div class="success_card">
+            <div class="success_icon">✔</div>
+            <h1 class="heading_font">Thank You for Your Order!</h1>
+            <p>Your meal is being prepared with care and will be delivered shortly.</p>
+            
+            <div class="order_receipt">
+                <div class="receipt_row">
+                    <span>Order Number:</span>
+                    <strong id="conf-order-id">#Z0000</strong>
+                </div>
+                <div class="receipt_row">
+                    <span>Items:</span>
+                    <span id="conf-items" class="text-muted">...</span>
+                </div>
+                <hr>
+                <div class="receipt_row total">
+                    <span>Amount to Pay:</span>
+                    <strong id="conf-total">Rs. 0</strong>
+                </div>
+            </div>
+
+            <p class="delivery_note">We will call you at <span id="conf-phone"></span> for confirmation.</p>
+            
+            <button class="btn-yellow" onclick="showSection('home')">Back to Homepage</button>
+        </div>
+    </div>
+</section>
+    <footer class="footer_section">
+        <div class="container footer_grid">
+            <div class="footer_col">
+                <h4>Contact Us</h4>
+                <p>Location: Karachi, Pakistan</p>
+                <p>Call: +92 300 1234567</p>
+                <p>Email: demo@zaiqa.com</p>
+            </div>
+            <div class="footer_col">
+                <h4 class="heading_font">Zaiqa</h4>
+                <p>Necessary, making this the first true generator on the Internet.</p>
+            </div>
+            <div class="footer_col">
+                <h4>Opening Hours</h4>
+                <p>Everyday</p>
+                <p>10:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; 2026 All Rights Reserved By Zaiqa Restaurant</p>
+        </div>
+    </footer>
+
+    <div id="cart-sidebar" class="sidebar">
+    <div class="sidebar_header">
+        <h3>Your Cart</h3>
+        <button onclick="toggleCart()">&times;</button>
+    </div>
+    
+    <div id="cart-items-container" class="cart_body">
+        </div>
+
+    <div class="cart_footer">
+        <div class="total_val">Total: Rs. <span id="cart-total">0</span></div>
+        
+        <div class="checkout_form">
+            <label>Customer Name</label>
+            <input type="text" id="custName" placeholder="Full Name">
+            
+            <label>Phone Number</label>
+            <input type="tel" id="custPhone" placeholder="03xx-xxxxxxx">
+            
+            <label>Delivery Address</label>
+            <textarea id="custAddress" placeholder="House #, Street, Area..."></textarea>
+            
+            <button class="btn-yellow" style="width:100%; margin-top:10px;" onclick="processCheckout()">
+                Confirm Order
+            </button>
+        </div>
+    </div>
+</div>
+
+  <div id="edit-modal" class="modal_overlay" style="display:none;">
+    <div class="modal_box">
+        <h3 class="heading_font">Update Item</h3>
+        <input type="hidden" id="editId">
+        <input type="text" id="editName" placeholder="Name">
+        <input type="text" id="editImg" placeholder="Image Path"> <input type="number" id="editPrice" placeholder="Price">
+        <select id="editCategory">
+            <option value="desi">Desi</option>
+            <option value="fastfood">Fast Food</option>
+            <option value="bbq">BBQ</option>
+        </select>
+        <button class="btn-yellow" onclick="saveEdit()">Apply Changes</button>
+        <button onclick="closeEditModal()">Cancel</button>
+    </div>
+</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
